@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { IoMdSearch } from "react-icons/io";
 
 import {Container, Logo, Title, Form, Input, Button} from "./styles";
@@ -18,7 +18,7 @@ function MainPage() {
         value={login} 
         onChange={(event) => setLogin(event.target.value)}
         />
-        <Button>
+        <Button to = {`/${login}/repositories`}>
           <IoMdSearch size={42} color="white"/>
         </Button>
       </Form>

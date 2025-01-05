@@ -28,3 +28,16 @@ export const Avatar = styled.img`
         margin-bottom: 0;
     }
 `;
+
+export const Login = styled.h1`
+    font-size: ${(props) => props.theme.fontSize.title};
+`;
+
+export const Name = styled.h2`
+    font-size: ${(props) => props.theme.fontSize.subtitle};
+    font-weight: normal;
+
+    @media screen and (max-width: ${(props) => props.theme.breakpoints.md}){
+        display: none;
+    }
+`;

@@ -10,7 +10,7 @@ export const Container = styled.div`
     @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
         grid-template-columns: auto auto;
         gap: 0.8rem;
-        padding-right: 0.1rem;
+        padding: 0 1rem;
     }
 `;
 
@@ -33,7 +33,7 @@ export const Selector = styled.button`
         background: ${(props) => props.color || props.theme.colors.light}; 
         color: ${(props) =>
             props.color ? props.theme.colors.white : props.theme.colors.black};
-        transform: translateX(0) scale(1.02); 
+        transform: translateX(5px) scale(1.02); 
     }
 
     @media screen and (max-width: ${(props) => props.theme.breakpoints.md}) {
@@ -49,8 +49,9 @@ export const Cleaner = styled.button`
     background: transparent; 
     color: ${(props) => props.theme.colors.white};
     border: none; 
-    text-align: center;
-    padding: 1rem;
+    text-align: left; /* Alinha o texto à esquerda */
+    padding: 1rem; /* Pode ajustar o padding para o que for necessário */
+    width: 100%; /* Garantir que o botão ocupe toda a largura disponível */
 
     &:hover {
         color: rgba(255, 255, 255, 0.5);

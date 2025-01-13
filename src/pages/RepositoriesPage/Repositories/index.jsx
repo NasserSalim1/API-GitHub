@@ -1,13 +1,18 @@
-import React from 'react'
+import React from 'react';
 
-import { Container } from './styles'
+import Repository from './Repository';
+
+import { Container } from './styles';
 
 function Repositories() {
   return (
     <Container>
-    <h1>
-      Repositories
-    </h1>
+      <Repository />
+      <Repository />
+      <Repository />
+      <Repository />
+      <Repository />
+      <Repository />
     </Container>
   )
 }

@@ -37,6 +37,8 @@ export const theme = {
     secondary: "#FE8C00",
     container: "#2d2d2d",
     light: "#ecf0f1",
+    champagneDark: "#bdc3c7",
+    danger: "#f37272",
   },
   fontFamily: {
     heading: ["IBM Plex Sans", "sans-serif"].join(","),
@@ -46,6 +48,9 @@ export const theme = {
   fontSize: {
     title: '1.3rem',
     subtitle: '1.25rem',
+    small: '.8 rem',
+    normal: '1 rem',
+    large: '1.2 rem',
     xs: rem(10),
     sm: rem(12),
     md: rem(14),

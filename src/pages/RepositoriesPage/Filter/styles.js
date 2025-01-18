@@ -49,9 +49,9 @@ export const Cleaner = styled.button`
     background: transparent; 
     color: ${(props) => props.theme.colors.white};
     border: none; 
-    text-align: left; /* Alinha o texto à esquerda */
-    padding: 1rem; /* Pode ajustar o padding para o que for necessário */
-    width: 100%; /* Garantir que o botão ocupe toda a largura disponível */
+    text-align: left; 
+    padding: 1rem; 
+    width: 100%; 
 
     &:hover {
         color: rgba(255, 255, 255, 0.5);

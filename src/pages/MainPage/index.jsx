@@ -10,7 +10,7 @@ function MainPage() {
   
   return (
     <Container>
-      <Logo src={githubLogo}  alt="API Github" />
+      <Logo src={githubLogo}  alt="Foto Usuário" /> 
       <Title>API GitHub</Title>
       <Form>
         <Input 

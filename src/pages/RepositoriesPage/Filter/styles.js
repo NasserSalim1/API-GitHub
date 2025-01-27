@@ -27,9 +27,10 @@ export const Selector = styled.button`
     border-bottom-right-radius: 20px;
     transition: background 0.3s, transform 0.3s; 
     padding: 0 1rem;
+    cursor: pointer;
 
     &:hover,
-    &.select {
+    &.selected { 
         background: ${(props) => props.color || props.theme.colors.light}; 
         color: ${(props) =>
             props.color ? props.theme.colors.white : props.theme.colors.black};
@@ -52,6 +53,7 @@ export const Cleaner = styled.button`
     text-align: left; 
     padding: 1rem; 
     width: 100%; 
+    cursor: pointer;        
 
     &:hover {
         color: rgba(255, 255, 255, 0.5);

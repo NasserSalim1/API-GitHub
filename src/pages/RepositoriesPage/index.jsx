@@ -82,14 +82,14 @@ function RepositoriesPage() {
       <SideBar>
         <Profile user={user}/>
         <Filter 
-          languages={languages}
-          currentLanguage={currentLanguage} // Corrigido
-          onClick={onFilterClick}
-        />    
+        languages={languages}
+        currentLanguage={currentLanguage}
+        onClick={onFilterClick}
+      />    
 
       </SideBar>
       <Main>
-        <Repositories repositories={repositories}/>
+        <Repositories repositories={repositories} currentLanguage={currentLanguage} />
       </Main>
     </Container>
   );
